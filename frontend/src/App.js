@@ -15,6 +15,7 @@ import Admindashboard from "./pages/admin/admindashboard/Admindashboard";
 import Profile from "./pages/profile/Profile";
 import Adminproductedit from "./pages/admin/adminproductedit/Adminproductedit";
 import ProductDetails from "./pages/productDetails/ProductDetails";
+import Footer from "./Components/footer/Footer";
 function App() {
   return (<>
    <Router>
@@ -36,6 +37,7 @@ function App() {
       <Route path="/profile" element={<Profile/>}/ >
 
     </Routes>
+    <Footer/>
    </Router>
    </>
   );
