@@ -15,7 +15,8 @@ const Homepage = () => {
 }, [])
 
   return (
-    <div className="container mt-5">
+    <div>
+      <div  class="main-banner">
       <div
         id="carouselBasicExample"
         class="carousel slide carousel-fade"
@@ -44,68 +45,61 @@ const Homepage = () => {
           ></button>
         </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner d-flex ">
+          <div class="carousel-item active " >
+            <div class="overlay"> </div>
             <img
-              src="https://cdn.shopify.com/s/files/1/2726/4990/files/best-work-backpacks.jpg?v=1660667024"
+              src="https://www.adventurepending.com/wp-content/uploads/2022/01/Best-small-hiking-backpacks-for-UK-walking.jpg"
               class="d-block w-100"
-              alt="Sunset Over the City"
+              alt="bag on hill"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Welcome to Jhola</h5>
-              <p>Bags That Fit Your Style.</p>
+              <h1>Welcome to Jhola</h1>
+              <h5>Bags That Fit Your Style.</h5>
             </div>
           </div>
 
           <div class="carousel-item">
+          <div class="overlay"> </div>
             <img
               src="https://cdn.thewirecutter.com/wp-content/media/2022/12/laptopbackpacks-2048px-7000-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"
               class="d-block w-100"
               alt="Canyon at Nigh"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h1>Choose From Many</h1>
+              <h5>Any Color, Any Size, Any Time</h5>
             </div>
           </div>
 
           <div class="carousel-item">
+          <div class="overlay"> </div>
             <img
-              src="https://cdn.shopify.com/s/files/1/2186/5207/collections/Mother_s_day_sale-19.png?v=1683295728"
+              src="https://www.theedupreneur.org/wp-content/uploads/2020/06/best-camping-gear.jpg"
               class="d-block w-100"
               alt="Cliff Above a Stormy Sea"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h1>Grab them now</h1>
+              <h5>
+                Offer available for limited time
+              </h5>
             </div>
           </div>
         </div>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      </div>
 
-
-      <div>
+      <div class="container">
         <h1 className="mt-5 mb-4">Available products</h1>
         <div class="row row-cols-1 row-cols-md-4 g-4">
           {

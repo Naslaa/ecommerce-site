@@ -14,10 +14,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <Link to={'/'} class="navbar-brand me-2">
-
             <img
               src=".\assets\images\logo.png"
               height="50"
@@ -39,19 +38,26 @@ const Navbar = () => {
             <i class="fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarButtonsExample">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse " id="navbarButtonsExample">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="About">About Us</a>
+                <Link to={'/'}>
+                <a class="nav-link me-3" href=" ">Home</a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=" ">All products</a>
+                <a class="nav-link me-3" href=" ">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="">Contact Us</a>
               </li>
             </ul>
 
             <div class="d-flex align-items-center">
               {
-
                 user ? (
                   <div class="d-flex align-items-center">
         
@@ -60,9 +66,9 @@ const Navbar = () => {
                   </a>
             
            
-                  <div class="dropdown">
+                  <div class="notification dropdown">
                     <a
-                      class="text-reset me-3 dropdown-toggle hidden-arrow"
+                      class="text-reset me-4 dropdown-toggle hidden-arrow"
                       href="#"
                       id="navbarDropdownMenuLink"
                       role="button"
@@ -90,7 +96,7 @@ const Navbar = () => {
            
                   <div class="dropdown">
                     <a
-                      class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                      class="dropdown-toggle d-flex align-items-center hidden-arrow me-1"
                       href="#"
                       id="navbarDropdownMenuAvatar"
                       role="button"
